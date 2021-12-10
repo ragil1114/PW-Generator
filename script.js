@@ -1,4 +1,4 @@
-  // Assignment Code
+  // Button
 var generateBtn = document.querySelector("#generate");
 
 
