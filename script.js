@@ -4,9 +4,13 @@ var generateBtn = document.querySelector("#generate");
 
   // generatePassword function()
 function generatePassword() {
-  console.log("BUTTON CLICKED")
     // 1. prompt the user for pw criteria
-    //   1a. pw length between 8 & 128
+    window.alert("How many characters would you like your password to have?")
+    window.alert("Click OK to include special characters.")
+    window.alert("Click OK to include numbers.")
+    window.alert("Click OK to include lowercase characters.")
+    window.alert("Click OK to include uppercase characters.")
+    //   1a. pw length between 8 and 128
     //   1b. prompt user for character types (lowercase, uppercase, numeric &/or special characaters)
     // 2. validate the input
     // 3. generate pw based on criteria
