@@ -27,6 +27,7 @@ THEN the password is either displayed in an alert or written to the page
 
 ##### Links
 URL: 
-
+https://ragil1114.github.io/PW-Generator/
 
 GitHub:
+https://github.com/ragil1114/PW-Generator.git
