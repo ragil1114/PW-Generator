@@ -12,11 +12,23 @@ function generatePassword() {
     //   1b. prompt user for character types (lowercase, uppercase, numeric &/or special characaters)
     // 2. validate the input
     // 3. generate pw based on criteria
-    var pwCharacters = window.prompt("How many characters would you like your password to have?");
+    var pwCharacters = parseInt (prompt("How many characters would you like your password to have?"));
+      if (isNaN(pwCharacters)) {
+        alert("Please choose a number for password length.")
+        return null
+      }
+      if (pwCharacters < 8 || pwCharacters > 128) {
+        alert("Choose password length between 8-128.")
+        return null
+      }
     var includeSpecial = window.confirm("Click OK to include special characters.");
     var includeNumbers = window.confirm("Click OK to include numbers.");
     var includeLowercase = window.confirm("Click OK to include lowercase characters.");
     var includeUppercase = window.confirm("Click OK to include uppercase characters.");
+      if (!includeSpecial && !includeNumbers && !includeUppercase && !includeLowercase) {
+        alert("Please choose atleast one character type.")
+        return null
+      }
     var password = "";
     var possibleCharacters = "";
     if (includeSpecial) {
