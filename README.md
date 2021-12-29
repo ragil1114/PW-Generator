@@ -33,3 +33,4 @@ GitHub:
 https://github.com/ragil1114/PW-Generator.git
 
 ##### Image
+"C:\Users\Rahil\code\projects\PW-Generator\assets\images\demo.png"
